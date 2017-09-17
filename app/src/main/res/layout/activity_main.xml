@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- Our activity_mai.xml file.
+- Will get inflated to our MainActivity.
+- Contains a SimpleRecyclerView.
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.hp.simplerecyclerclicks.MainActivity">
+
+    <com.jaychang.srv.SimpleRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srv_layoutMode="linearVertical"
+        app:srv_showDivider="true"
+        app:srv_showLastDivider="true"
+        app:srv_dividerOrientation="both"
+        app:srv_dividerColor="@color/colorAccent"
+        app:srv_dividerPaddingLeft="5dp"
+        app:srv_dividerPaddingRight="5dp"
+        app:srv_dividerPaddingTop="5dp"
+        app:srv_dividerPaddingBottom="5dp" />
+
+</android.support.constraint.ConstraintLayout>
